@@ -39,6 +39,7 @@ const Photos = () => {
                     return (
                         <Photo
                             key={index}
+                            fullImg={val.url}
                             imgsrc={val.thumbnailUrl}
                             title={val.title}
                         />

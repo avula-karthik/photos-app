@@ -15,7 +15,7 @@ function ImagePreviewComponent(props) {
             <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader>Image Full View : </ModalHeader>
                 <ModalBody>
-                    <img src={props.imgsrc} alt='image in full screen mode' />
+                    <img src={props.fullImg} alt='image in full screen mode' />
                 </ModalBody>
                 <ModalFooter>
                     <Button color='danger' onClick={toggle}>
