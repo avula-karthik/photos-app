@@ -48,7 +48,7 @@ const Photos = () => {
             )}
 
             <div className='pageClass'>
-                <Pagination className='col-lg-4 col-md-3 mt-2 mx-auto'>
+                <Pagination className='col-lg-4 col-md-3 mt-2 mx-auto col-sm-4 '>
                     <PaginationItem className='mx-md-auto'>
                         <PaginationLink
                             onClick={() => setAlbumNo(1)}

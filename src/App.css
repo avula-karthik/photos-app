@@ -54,3 +54,11 @@ img {
     width: 20rem;
     margin: 1rem;
 }
+.pageClass-sm {
+    margin: auto;
+}
+@media screen and (max-width: 540px) {
+    .pageClass {
+        margin-left: 15%;
+    }
+}
