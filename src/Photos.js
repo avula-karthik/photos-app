@@ -50,12 +50,14 @@ const Photos = () => {
             <div className='pageClass'>
                 <Pagination className='col-lg-4 col-md-3 mt-2 mx-auto'>
                     <PaginationItem className='mx-md-auto'>
-                        <PaginationLink onClick={() => setAlbumNo(1)}>
-                            First
-                        </PaginationLink>
+                        <PaginationLink
+                            onClick={() => setAlbumNo(1)}
+                            first
+                        ></PaginationLink>
                     </PaginationItem>
                     <PaginationItem className='mx-md-auto'>
                         <PaginationLink
+                            previous
                             onClick={() => {
                                 if (albumNo > 1) {
                                     setAlbumNo(albumNo - 1);
@@ -63,9 +65,7 @@ const Photos = () => {
                                     setAlbumNo(1);
                                 }
                             }}
-                        >
-                            Previous
-                        </PaginationLink>
+                        ></PaginationLink>
                     </PaginationItem>
                     <PaginationItem className='mx-md-auto'>
                         <PaginationLink onClick={() => setAlbumNo(1)}>
@@ -94,6 +94,7 @@ const Photos = () => {
                     </PaginationItem>
                     <PaginationItem className='mx-md-auto'>
                         <PaginationLink
+                            next
                             onClick={() => {
                                 if (albumNo >= 100) {
                                     setAlbumNo(100);
@@ -101,14 +102,13 @@ const Photos = () => {
                                     setAlbumNo(albumNo + 1);
                                 }
                             }}
-                        >
-                            Next
-                        </PaginationLink>
+                        ></PaginationLink>
                     </PaginationItem>
                     <PaginationItem className='mx-md-auto'>
-                        <PaginationLink onClick={() => setAlbumNo(100)}>
-                            Last
-                        </PaginationLink>
+                        <PaginationLink
+                            onClick={() => setAlbumNo(100)}
+                            last
+                        ></PaginationLink>
                     </PaginationItem>
                 </Pagination>
             </div>
