@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <h1>
-        <b>Welcome to Gallery App ! - server #{randomString} xDD</b>
+        <b>Welcome to Gallery App ! - server #{randomString}</b>
         {/* refresh makes it fetch new letter everytime */}
       </h1>
       <Photos />
