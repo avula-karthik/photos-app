@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <h1>
         <b>Welcome to Gallery App ! - server #{randomString}</b>
+        <b>Test</b>
         {/* refresh makes it fetch new letter everytime */}
       </h1>
       <Photos />
